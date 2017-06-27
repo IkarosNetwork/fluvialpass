@@ -4,6 +4,7 @@
   <artifactId>fluvialpass</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  <name>fluvialpass</name>
   
   <repositories>
 	  <repository>
@@ -48,8 +49,8 @@
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>javax.servlet-api</artifactId>
-		    <version>4.0.0-b07</version>
-		    <scope>provided</scope>
+		    <version>3.0.1</version>
+		     <scope>provided</scope>
 		</dependency>
 		
 		<!-- HIBERNATE -->
