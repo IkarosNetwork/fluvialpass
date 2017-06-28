@@ -1,48 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.fluvialpass</groupId>
+  <groupId>com.fluvialpass</groupId>
   <artifactId>fluvialpass</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>fluvialpass</name>
   
-  <repositories>
-	  <repository>
-		<id>prime-repo</id>
-		<name>PrimeFaces Maven Repository</name>
-		<url>http://repository.primefaces.org</url>
-		<layout>default</layout>
-	  </repository>
-	  
-	  <repository>
-        <id>spring-milestones</id>
-        <name>Spring Milestones</name>
-        <url>https://repo.spring.io/libs-milestone</url>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-    </repository>
-    
-  </repositories>
-  
   <dependencies>
-  
-	  <dependency>
-		<groupId>org.primefaces</groupId>
-		<artifactId>primefaces</artifactId>
-		<version>6.1</version>
-	  </dependency>
 	  
 	  <dependency>
 	    <groupId>com.sun.faces</groupId>
 	    <artifactId>jsf-api</artifactId>
-	    <version>2.2.14</version>
+	    <version>2.2.8</version>
 	  </dependency>
 	  
 	  <dependency>
 	    <groupId>com.sun.faces</groupId>
 	    <artifactId>jsf-impl</artifactId>
-	    <version>2.2.14</version>
+	    <version>2.2.8</version>
 	  </dependency>
 	  
 	  
@@ -53,7 +28,48 @@
 		     <scope>provided</scope>
 		</dependency>
 		
-		<!-- HIBERNATE -->
+	<!-- <dependency>
+	    <groupId>org.primefaces</groupId>
+	    <artifactId>primefaces</artifactId>
+	    <version>6.1</version>
+	</dependency>  -->
+	
+	<!--  SPRING FRAMEWORK  -->
+	
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.9.RELEASE</version>
+    </dependency>
+    
+    <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-releasetrain</artifactId>
+            <version>Kay-M4</version>
+            <type>pom</type>
+            <scope>import</scope>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.integration</groupId>
+        <artifactId>spring-integration-core</artifactId>
+        <version>4.3.10.RELEASE</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-web</artifactId>
+        <version>5.0.0.M2</version>
+    </dependency>
+    
+    
+    <!-- <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session</artifactId>
+        <version>2.0.0.M2</version>
+    </dependency>  -->
+    
+    <!-- HIBERNATE -->
 		
 		<dependency>
 		   <groupId>org.hibernate</groupId>
@@ -66,57 +82,21 @@
 		   <artifactId>hibernate-validator</artifactId>
 		   <version>5.4.1.Final</version>
 		</dependency>
-		
-		
-		<!-- SPRING FRAMEWORK -->
-		
-		
-	    <dependency>
-	        <groupId>org.springframework</groupId>
-	        <artifactId>spring-context</artifactId>
-	        <version>4.3.9.RELEASE</version>
-	    </dependency>
-	    	
-	    <dependency>
-	        <groupId>org.springframework.security</groupId>
-	        <artifactId>spring-security-web</artifactId>
-	        <version>5.0.0.M2</version>
-	    </dependency>
-	    
-	    <dependency>
-	        <groupId>org.springframework.session</groupId>
-	        <artifactId>spring-session</artifactId>
-	        <version>2.0.0.M2</version>
-	    </dependency>
-	    
-	    <dependency>
-	        <groupId>org.springframework.integration</groupId>
-	        <artifactId>spring-integration-core</artifactId>
-	        <version>4.3.10.RELEASE</version>
-	    </dependency>
-	    
-	    <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-releasetrain</artifactId>
-            <version>Kay-M4</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-        
-        <dependency>
-	        <groupId>org.springframework.webflow</groupId>
-	        <artifactId>spring-webflow</artifactId>
-	        <version>2.4.5.RELEASE</version>
-	    </dependency>
-	    
-	    <!-- MY SQL -->
-	    <dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>6.0.6</version>
-		</dependency>
-
-	  
+	
   </dependencies>
+  
+  <repositories>
+		<repository>
+	        <id>spring-milestones</id>
+	        <name>Spring Milestones</name>
+	        <url>https://repo.spring.io/libs-milestone</url>
+	        <snapshots>
+	            <enabled>false</enabled>
+	        </snapshots>
+	    </repository>
+  </repositories>  
+    
+  
+  
   
 </project>

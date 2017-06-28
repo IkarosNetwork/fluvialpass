@@ -1,18 +1,12 @@
 package com.fluvialpass.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import java.io.Serializable;
 
-@Entity
-public class Barco {
+public class Barco implements Serializable{
 
-		@Id
-		private Long idBarco;
-		
-		private String nomeBarco;
-		private String tipoBarco;
-		private String destino;
-		private String balsa;
-		private String telefone;
-		private int capacidadeLotação;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 }

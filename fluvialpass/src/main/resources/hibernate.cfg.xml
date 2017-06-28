@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE hibernate-configuration PUBLIC
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.password">wes635689@</property>
+		<property name="hibernate.connection.password">senhaaqui</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/fluvialpass</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -14,8 +13,8 @@
 		<property name="hibernate.format_sql">false</property>
 		<property name="hbm2ddl.auto">update</property>
 		
-		<!-- mapeando bean -->
-		<mapping class="" />
+		<!-- Livro -->
+		<mapping class="com.fluvialpass.model.dao.nomedaclasse" />
 		
 	</session-factory>
 </hibernate-configuration>

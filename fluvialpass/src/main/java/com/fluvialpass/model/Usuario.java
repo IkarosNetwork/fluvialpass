@@ -1,19 +1,12 @@
 package com.fluvialpass.model;
 
-import java.util.Date;
+import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+public class Usuario implements Serializable{
 
-@Entity
-public class Usuario {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-		@Id
-		private Long idUsuario;
-		
-		private String nomeUsuario;
-		private Date dataNasc;
-		private int idade;
-		private String endereco;
-		private String telefone;
 }

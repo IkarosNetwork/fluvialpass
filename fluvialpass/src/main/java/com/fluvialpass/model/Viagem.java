@@ -1,20 +1,12 @@
 package com.fluvialpass.model;
 
-import java.util.Date;
+import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+public class Viagem implements Serializable{
 
-@Entity
-public class Viagem {
-	
-	@Id
-	private Long idViagem;
-	
-	private Date dataSaida;
-	private Date dataChegada;
-	private String horaSaida;
-	private String horaChegada;
-	private String Barco;
-	private String itinaerario;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 }
